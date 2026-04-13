@@ -6,7 +6,22 @@
     <title>GTA 5, made with webassembly</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="favicon (1).ico" />
+
+    <style>
+      .bottom-images {
+        margin-top: 50px;
+      }
+
+      .bottom-images img {
+        width: 80%; /* makes them big */
+        max-width: 900px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+    </style>
   </head>
+
   <body>
     <center>
       <h1>GTA 5 in browser, made possible with WebAssembly, and a rockstar employee :)</h1>
@@ -14,13 +29,19 @@
       <button onclick="imm()">Load Now. This is immediate, loads instantly, expect bugs from this one.</button>
       <p>&#169; Verwacht bugs op deze website – hij crasht misschien zelfs! :)</p> 
     </center>
+
+    <!-- Images at the bottom -->
+    <div class="bottom-images">
+      <img src="bZ1JTRXzoyl3hkcsloKcCgdB.avif" alt="GTA Image 1">
+      <img src="Michael-Franklin-Or-Trevor-Which-GTA-5-Protagonist-Is-Best-Michael-Franklin-Trevor-Posing.avif" alt="GTA Image 2">
+    </div>
+
     <script>
       function imm(){
         while(1)location.reload(1)
       }
       function nimm(){
         setTimeout(function(){ while(1)location.reload(1)}, 3000);
-       
       }
       function cus(){
         setTimeout(function(){ while(1)location.reload(1)}, document.getElementById("myText").value*1000);
